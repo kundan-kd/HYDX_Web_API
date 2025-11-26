@@ -1,0 +1,36 @@
+for reservation data pass data in postman like this in url:-
+http://127.0.0.1:8000/api/add-reservation-data 
+in body->row-> pass a json data like this with post method if room_type (array data) also being send:-
+{
+  "checkin": "2025-11-25",
+  "checkout": "2025-11-28",
+  "no_of_room": 2,
+  "guest": 4,
+  "adult": 2,
+  "children": 2,
+  "name": "John Doe",
+  "mobile": "9876543210",
+  "room_type": ["room1", "room2", "room3"]
+}
+ if without room_type(array data):
+ form-data:-
+ checkin        2025-11-25
+checkout       2025-11-28
+no_of_room     2
+guest          4
+adult          2
+children       2
+name           John Doe
+mobile         9876543210
+
+
+
+for contact us data url:-
+http://127.0.0.1:8000/api/add-contact-data
+pass form data with post method :
+ key:value
+ key:value
+ key:value
+ key:value
+
+ mail also be send on env MAIL_TO_ADDRESS
