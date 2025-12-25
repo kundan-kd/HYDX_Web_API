@@ -9,5 +9,5 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Reservation extends Model
 {
     use HasFactory,SoftDeletes;
-     protected $fillable = ['checkin', 'checkout', 'no_of_room','guest','adult','children','name','mobile'];
+     protected $fillable = ['checkin', 'checkout', 'rooms','guests','roomType','name','mobile','email'];
 }

@@ -15,12 +15,14 @@ return new class extends Migration
             $table->id();
             $table->date('checkin')->nullable();
             $table->date('checkout')->nullable();
-            $table->integer('no_of_room')->default(0);
-            $table->integer('guest')->default(0);
-            $table->integer('adult')->default(0);
+            $table->integer('rooms')->default(0);
+            $table->integer('guests')->default(0);
+            $table->integer('adults')->default(0);
             $table->integer('children')->default(0);
+            $table->string('roomType',30)->default();
             $table->string('name')->nullable();
             $table->string('mobile')->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
